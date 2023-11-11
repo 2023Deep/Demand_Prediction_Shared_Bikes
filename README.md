@@ -1,6 +1,5 @@
 # Demand Prediction : Shared Bikes
-> Outline a brief description of your project.
-
+> BoomMBikes, a US bike-sharing provider, has faced revenue declines due to the pandemic. To recover, they aim to develop a strategic business plan post-lockdown. The company has enlisted a consulting firm to analyze factors influencing shared bike demand in the American market. They seek to identify significant variables predicting demand and assess how well these variables explain bike demands. Using data from meteorological surveys and lifestyle information, BoomBikes aims to position itself for success in the anticipated post-quarantine surge in bike usage.
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -11,20 +10,21 @@
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- Provide general information about your project here.
-- What is the background of your project?
-- What is the business probem that your project is trying to solve?
-- What is the dataset that is being used?
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Business Goal
+-   Prepare a ML Model to predict demand for shared bikes with the available independent variables. Establish a relationship to predict how demands vary with       
+    different features So that the business leaders can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations.
+- Objective/s 
+    Find out which variables are significant in predicting the demand for shared bikes.
+    How well those variables describe the bike demands
+- Summary: Summary of the steps followed is available in the presentation and pdf file
 
 ## Conclusions
-- Conclusion 1 from the analysis
-- Conclusion 2 from the analysis
-- Conclusion 3 from the analysis
-- Conclusion 4 from the analysis
-
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Count of Casual users has the highest coefficient and can bring in the most impact for our linear model.
+- The top four variables are
+    - Count of casual users, weekday_Mon, weekday_Sun, weathersit_Light Snow
+- Categorical variables have a low to medium impact on the regression model. Though 9 out of 10 independent variables are categorical in our linearregressionmodel, the 
+    highest weightage is associated with Casual variable which is not a categorical variable.
+- Sunday and Monday have higher impact on the demand as compared to other categorical variables such as different months and weather_light_Snow
 
 
 ## Technologies Used
@@ -32,22 +32,3 @@
 - Data Analysis Libraries - Numpy, Pandas
 - Data Visualization Libraries - Matplotlib.pyplot, Seaborn
 - Machine Learnign Libraries - Scikit-learn, SciPy
-
-<!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- References if any...
-- This project was based on [this tutorial](https://www.example.com).
-
-
-## Contact
-Created by [@githubusername] - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
